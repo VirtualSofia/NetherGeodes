@@ -44,10 +44,10 @@ public class NetherGeodes {
     // Create a Deferred Register to hold CreativeModeTabs which will all be registered under the "nether_geode" namespace
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, MODID);
 
-    // Creates a new Block with the id "nether_geode:example_block", combining the namespace and path
-    public static final DeferredBlock<Block> EXAMPLE_BLOCK = BLOCKS.registerSimpleBlock("example_block", BlockBehaviour.Properties.of().mapColor(MapColor.STONE));
-    // Creates a new BlockItem with the id "nether_geode:example_block", combining the namespace and path
-    public static final DeferredItem<BlockItem> EXAMPLE_BLOCK_ITEM = ITEMS.registerSimpleBlockItem("example_block", EXAMPLE_BLOCK);
+    // Creates a new Block with the id "nether_geode:black_calcite", combining the namespace and path
+    public static final DeferredBlock<Block> BLACK_CALCITE = BLOCKS.registerSimpleBlock("black_calcite", BlockBehaviour.Properties.of().mapColor(MapColor.STONE));
+    // Creates a new BlockItem with the id "nether_geode:black_calcite", combining the namespace and path
+    public static final DeferredItem<BlockItem> BLACK_CALCITE_ITEM = ITEMS.registerSimpleBlockItem("black_calcite", BLACK_CALCITE);
 
 
 
@@ -81,7 +81,7 @@ public class NetherGeodes {
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
-            event.accept(EXAMPLE_BLOCK_ITEM);
+            event.accept(BLACK_CALCITE_ITEM);
         }
     }
 
