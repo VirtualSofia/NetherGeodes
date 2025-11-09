@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "#nethergeodes:has_nether_geode",
+  "features": "nethergeodes:nether_amethyst_geode",
+  "step": "top_layer_modification"
+}

@@ -1,0 +1,9 @@
+{
+  "values": [
+    "#c:is_nether",
+    "#minecraft:is_nether"
+  ],
+  "remove": [
+    "minecraft:basalt_deltas"
+  ]
+}
